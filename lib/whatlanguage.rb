@@ -45,7 +45,7 @@ class WhatLanguage
         top_results = results.sort_by{|a,b| -b}[0..1]
         
         # Next line may need some tweaking one day..
-        break if top_results[0][1] > 4 && ((top_results[0][1] > top_results[1][1] * 2) || (top_results[0][1] - top_results[1][1] > 25))
+        break if top_results[0][1] > 8 && ((top_results[0][1] > top_results[1][1] * 2) || (top_results[0][1] - top_results[1][1] > 25))
       end
       
       #break if it > 100
